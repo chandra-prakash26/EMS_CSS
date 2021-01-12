@@ -1,0 +1,28 @@
+
+/*employee table*/
+$sql = "CREATE TABLE employee (
+empid INT AUTO_INCREMENT PRIMARY KEY,
+firstname VARCHAR(30) NOT NULL,
+lastname VARCHAR(30) NOT NULL,
+mobileno VARCHAR(10) NOT NULL,
+dob date NOT NULL,
+gender VARCHAR(20) NOT NULL,
+city VARCHAR(20) NOT NULL,
+hobby VARCHAR(20) NOT NULL
+)";
+
+/*project table*/
+$sql = "CREATE TABLE project (
+projid INT AUTO_INCREMENT PRIMARY KEY,
+projname VARCHAR(30) NOT NULL,
+projdesc VARCHAR(200) NOT NULL,
+projstartdate date NOT NULL,
+projenddate date NOT NULL
+)";
+
+/*emp_proj table*/
+$sql = "CREATE TABLE emp_proj (
+id INT AUTO_INCREMENT PRIMARY KEY,
+empid int NOT NULL,
+projid int NOT NULL
+)";
